@@ -4,7 +4,7 @@
     
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-    <title>Emo-Avatar: Efficient Monotonic Video Style Avatar through Deferred Neural Rendering</title>
+    <title>GaussianStyle: Gaussian Head Avatar via StyleGAN</title>
 
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,18 +13,18 @@
 
 <!--     <link rel="apple-touch-icon" href="apple-touch-icon.png"> -->
   <!-- <link rel="icon" type="image/jpg" href="depth/depth_icon.jpg"> -->
-  <link rel="shortcut icon" HREF="emo-avatar/favicon.ico">
+  <link rel="shortcut icon" HREF="gaussianstyle/favicon.ico">
   <!-- Place favicon.ico in the root directory -->
 
-    <link rel="stylesheet" href="./emo-avatar/bootstrap.min.css">
-    <link rel="stylesheet" href="./emo-avatar/font-awesome.min.css">
-    <link rel="stylesheet" href="./emo-avatar/codemirror.min.css">
-    <link rel="stylesheet" href="./emo-avatar/app.css">
+    <link rel="stylesheet" href="./gaussianstyle/bootstrap.min.css">
+    <link rel="stylesheet" href="./gaussianstyle/font-awesome.min.css">
+    <link rel="stylesheet" href="./gaussianstyle/codemirror.min.css">
+    <link rel="stylesheet" href="./gaussianstyle/app.css">
 
-    <link rel="stylesheet" href="./emo-avatar/bootstrap.min(1).css">
+    <link rel="stylesheet" href="./gaussianstyle/bootstrap.min(1).css">
     
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script type="text/javascript" async="" src="./emo-avatar/analytics.js"></script><script async="" src="./emo-avatar/js"></script>
+    <script type="text/javascript" async="" src="./gaussianstyle/analytics.js"></script><script async="" src="./gaussianstyle/js"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
@@ -33,19 +33,19 @@
       gtag('config', 'UA-110862391-3');
     </script>
 
-    <script src="./emo-avatar/jquery.min.js"></script>
-    <script src="./emo-avatar/bootstrap.min.js"></script>
-    <script src="./emo-avatar/codemirror.min.js"></script>
-    <script src="./emo-avatar/clipboard.min.js"></script>
+    <script src="./gaussianstyle/jquery.min.js"></script>
+    <script src="./gaussianstyle/bootstrap.min.js"></script>
+    <script src="./gaussianstyle/codemirror.min.js"></script>
+    <script src="./gaussianstyle/clipboard.min.js"></script>
     
-    <script src="./emo-avatar/app.js"></script>
+    <script src="./gaussianstyle/app.js"></script>
 </head>
 
 <body>
     <div class="container" id="main">
         <div class="row">
             <h1 class="col-md-12 text-center">
-                Emo-Avatar: Efficient Monotonic Video Style Avatar through Deferred Neural Rendering<br>
+                gaussianstyle: Efficient Monotonic Video Style Avatar through Deferred Neural Rendering<br>
                 <small>
                     Under Review
                 </small>
@@ -121,21 +121,20 @@
                 <div class="col-md-8 col-md-offset-2 text-center">
                     <ul class="nav nav-pills nav-justified">
                         <li>
-                            <!-- <a href="./emo-avatar/siggraph_asia_2023_image_generation_final.pdf"> -->
                             <a href="https://arxiv.org/abs/2402.00827">
-                            <img src="./emo-avatar/paper_icon.jpg" height="120px"><br>
+                            <img src="./gaussianstyle/paper_icon.jpg" height="120px"><br>
                                 <h4><strong>Paper</strong></h4>
                             </a>
                         </li>
                         <li>
-                            <a href="./emo-avatar.html">
-                            <img src="./emo-avatar/paperclip.png" height="120px"><br>
+                            <a href="./gaussianstyle.html">
+                            <img src="./gaussianstyle/paperclip.png" height="120px"><br>
                                 <h4><strong>Supplementary</strong></h4>
                             </a>
                         </li>
                         <li>
-                            <a href="./emo-avatar.html">
-                            <img src="./emo-avatar/github_pad.png" height="120px"><br>
+                            <a href="https://github.com/andypinxinliu/HumanFaceProject/tree/main/assets/GaussianStyle">
+                            <img src="./gaussianstyle/github_pad.png" height="120px"><br>
                                 <h4><strong> Code <br></strong></h4>
                             </a>
                         </li>
@@ -150,27 +149,9 @@
                 <h3>
                     Abstract
                 </h3>
-                <img src="./emo-avatar/emo-avatar_teaser.png" class="img-responsive" alt="overview"><br>
+                <img src="./gaussianstyle/gaussianstyle_teaser.png" class="img-responsive" alt="overview"><br>
                 <p class="text-justify">
-                    Artistic video portrait generation is a significant and sought-after task in the fields of computer graphics and vision. 
-                    While various methods have been developed that integrate NeRFs or StyleGANs with instructional editing models for creating 
-                    and editing drivable portraits, these approaches face several challenges. They often rely heavily on large datasets, 
-                    require extensive customization processes, and frequently result in reduced image quality. To address the above problems, 
-                    we propose the Efficient Monotonic Video Style Avatar (Emo-Avatar) through deferred neural rendering that enhances StyleGAN's 
-                    capacity for producing dynamic, drivable portrait videos. We first delved into whether pre-trained StyleGAN can encode video 
-                    portraits. It has been shown that StyleGAN can encode aligned, multi-view animatable portrait videos. However, for portrait 
-                    videos containing upper body elements, StyleGAN struggles to accurately reconstruct these unaligned avatars. To fully 
-                    leverage the facial information from the pre-trained StyleGAN for portrait rendering. We proposed a two-stage deferred 
-                    neural rendering pipeline. In the first stage, we utilize few-shot PTI inversion to initialize the StyleGAN generator 
-                    through several extreme poses sampled from the video to capture the consistent representation of aligned faces from the 
-                    target portrait. In the second stage, we propose a Laplacian pyramid for high-frequency texture sampling from UV maps 
-                    deformed by dynamic flow of expression for motion-aware texture prior integration to provide torso features to enhance 
-                    StyleGAN's ability to generate complete and upper body for portrait video rendering. Emo-Avatar reduces style 
-                    customization time from hours to merely 5 minutes compared with existing methods. In addition, Emo-Avatar requires 
-                    only a single reference image for editing and employs region-aware contrastive learning with semantic invariant 
-                    CLIP guidance, ensuring consistent high-resolution output and identity preservation. Through both quantitative 
-                    and qualitative assessments, Emo-Avatar demonstrates superior performance over existing methods in terms of 
-                    training efficiency, rendering quality and editability in self- and cross-reenactment.
+                    Existing methods like Neural Radiation Fields (NeRF) and 3D Gaussian Splatting (3DGS) have made significant strides in facial attribute control such as facial animation and components editing, yet they struggle with fine-grained representation and scalability in dynamic head modeling. To address these limitations, we propose GaussianStyle, a novel framework that integrates the volumetric strengths of 3DGS with the powerful implicit representation of StyleGAN. The GaussianStyle preserves structural information, such as expressions and poses, using Gaussian points, while projecting the implicit volumetric representation into StyleGAN to capture high-frequency details and mitigate the over-smoothing commonly observed in neural texture rendering. Experimental outcomes indicate that our method achieves state-of-the-art performance in reenactment, novel view synthesis, and animation.
                     
             </div>
         </div>
@@ -190,23 +171,24 @@
 
 
 
-        <!-- <div class="row">
+        <div class="row">
             <div class="col-md-8 col-md-offset-2">
                 <h3>
                     BibTeX
                 </h3>
                 <div class="form-group col-md-10 col-md-offset-1">
                 <pre>
-                @article{Zeng_2023_emo-avatar,
-                    author = {Zeng, Libing and Chen, Lele and Xu, Yi and Kalantari, Nima Khademi},
-                    title = {emo-avatar: A Controllable Personalized Generative Prior},
-                    booktitle={ACM SIGGRAPH Asia},
-                    year={2023}
+                @inproceedings{liu2024gaussianstylegaussianheadavatar,
+                      title={GaussianStyle: Gaussian Head Avatar via StyleGAN}, 
+                      author={Pinxin Liu and Luchuan Song and Daoan Zhang and Hang Hua and Yunlong Tang and Huaijin Tu and Jiebo Luo and Chenliang Xu},
+                      year={2024},
+                      booktitle={3DV},
+                      year={2024}
                 }
                 </pre>
                 </div>
             </div>
-        </div> -->
+        </div>
 
 
 
