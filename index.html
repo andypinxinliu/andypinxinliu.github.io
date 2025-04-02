@@ -68,8 +68,8 @@
                     </div>
 
                     <!-- Right side - Bio content -->
-                    <div style="width: 700px;">
-                        <div class="bio_format">
+                    <div style="width: 700px; float: left;">
+                        <div class="bio_format" style="margin: 0; padding: 0;">
                             <p> Hi!
                             </p>
                             
@@ -99,6 +99,7 @@
                     background-color: #f5f5f5;
                     border-radius: 8px;
                     overflow: hidden;
+                    float: left;
                 }
                 .slide {
                     display: none;
@@ -120,6 +121,10 @@
                 @keyframes fade {
                     from {opacity: .4} 
                     to {opacity: 1}
+                }
+                .bio_format {
+                    text-align: left;
+                    line-height: 1.6;
                 }
             </style>
 
