@@ -184,6 +184,12 @@ document.addEventListener('DOMContentLoaded', function() {
             const img = document.createElement('img');
             img.src = photo.src;
             img.alt = photo.caption || 'Gallery photo';
+            img.loading = 'lazy';
+            
+            // Add lazy loading
+            img.addEventListener('load', function() {
+                this.classList.add('loaded');
+            });
             
             if (photo.caption) {
                 const caption = document.createElement('div');
@@ -211,9 +217,6 @@ document.addEventListener('DOMContentLoaded', function() {
         const descriptionContainer = document.createElement('div');
         descriptionContainer.className = 'album-description';
         
-        const descriptionTitle = document.createElement('h3');
-        descriptionTitle.textContent = album.title;
-        
         // Create a container for the description text with scrolling
         const descriptionTextContainer = document.createElement('div');
         descriptionTextContainer.className = 'description-container';
@@ -223,7 +226,6 @@ document.addEventListener('DOMContentLoaded', function() {
         descriptionText.className = 'description-text en';
         
         descriptionTextContainer.appendChild(descriptionText);
-        descriptionContainer.appendChild(descriptionTitle);
         descriptionContainer.appendChild(descriptionTextContainer);
         
         // Add translation button if the album has a Chinese translation
