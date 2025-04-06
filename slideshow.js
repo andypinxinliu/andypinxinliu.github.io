@@ -394,28 +394,3 @@
       }
     });
   }, { once: true }); // Use once option to auto-remove event listener after execution
-
-// Dark mode toggle functionality
-// Dark mode toggle functionality - add this to your slideshow.js file
-document.addEventListener('DOMContentLoaded', function() {
-    const themeToggle = document.getElementById('themeToggle');
-    
-    if (themeToggle) {
-      // Check for saved preference on load
-      if (localStorage.getItem('darkMode') === 'enabled') {
-        document.body.classList.add('dark-mode');
-      }
-      
-      themeToggle.addEventListener('click', function() {
-        // Toggle dark mode class specifically on the body
-        document.body.classList.toggle('dark-mode');
-        
-        // Save preference
-        const isDarkMode = document.body.classList.contains('dark-mode');
-        localStorage.setItem('darkMode', isDarkMode ? 'enabled' : 'disabled');
-        
-        // Debug output to console
-        console.log('Dark mode toggled, new state:', isDarkMode);
-      });
-    }
-  });

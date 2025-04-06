@@ -28,11 +28,22 @@
         <div class="loader-circle"></div>
     </div>
     
-    <!-- Dark Mode Toggle -->
-    <div class="theme-toggle" id="themeToggle">
-        <div class="toggle-icon sun-icon"><i class="fas fa-sun"></i></div>
-        <div class="toggle-icon moon-icon"><i class="fas fa-moon"></i></div>
-    </div>
+    <!-- Navigation Menu -->
+    <nav class="main-nav">
+        <ul>
+            <li><a href="index.html" class="active">About</a></li>
+            <li><a href="publications.html">Publications</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="cv.html">CV</a></li>
+            <li class="theme-toggle-container">
+                <div class="theme-toggle" id="themeToggle">
+                    <div class="toggle-icon sun-icon"><i class="fas fa-sun"></i></div>
+                    <div class="toggle-icon moon-icon"><i class="fas fa-moon"></i></div>
+                </div>
+            </li>
+        </ul>
+    </nav>
     
     <!-- Back to Top Button -->
     <div class="back-to-top" id="backToTop">
@@ -40,442 +51,330 @@
     </div>
     
     <div id="main">
-        <div class="name-container">
-            <span class="name-decoration decoration-1">✱</span>
-            <span class="name-decoration decoration-2">✦</span>
-            <span class="name-decoration decoration-3">✧</span>
-            <span class="name-decoration decoration-4">✶</span>
-            <div class="name">
-                Pinxin Liu
+        <!-- About Section -->
+        <section id="about" class="section active">
+            <div class="name-container">
+                <span class="name-decoration decoration-1">✱</span>
+                <span class="name-decoration decoration-2">✦</span>
+                <span class="name-decoration decoration-3">✧</span>
+                <span class="name-decoration decoration-4">✶</span>
+                <div class="name">
+                    Pinxin Liu
+                </div>
             </div>
-        </div>
-        
-        <div class="quote">
-            Exploring the convergence of vision, language, and motion
-        </div>
-        
-        <div class="profile-container">
-            <!-- Left side - Slideshow -->
-            <div class="slideshow-container">
-                <div class="slide fade">
-                    <img src="./index/avatar-1.png" alt="Andy Liu">
+            
+            <div class="quote">
+                Exploring the convergence of vision, language, and motion
+            </div>
+            
+            <div class="profile-container">
+                <!-- Left side - Slideshow -->
+                <div class="slideshow-container">
+                    <div class="slide fade">
+                        <img src="./index/avatar-1.png" alt="Andy Liu">
+                    </div>
+                    <div class="slide fade">
+                        <img src="./index/avatar-2.png" alt="Andy Liu">
+                    </div>
+                    <div class="slide fade">
+                        <img src="./index/avatar-3.png" alt="Andy Liu">
+                    </div>
+                    <div class="slide fade">
+                        <img src="./index/avatar-4.png" alt="Andy Liu">
+                    </div>
+                    <div class="slide fade">
+                        <img src="./index/avatar-5.png" alt="Andy Liu">
+                    </div>
+                    <div class="slide fade">
+                        <img src="./index/avatar-6.png" alt="Andy Liu">
+                    </div>
+                    <div class="slide fade">
+                        <img src="./index/avatar-7.png" alt="Andy Liu">
+                    </div>
+                    <div class="slide fade">
+                        <img src="./index/avatar-8.png" alt="Andy Liu">
+                    </div>
                 </div>
-                <div class="slide fade">
-                    <img src="./index/avatar-2.png" alt="Andy Liu">
+
+                <!-- Right side - Bio content -->
+                <div class="bio-content">
+                    <div class="bio_format">
+                        <p>Hi! 👋</p>
+                        
+                        <p>I am a PhD student, supervised by Dr. <a href="https://www.cs.rochester.edu/~cxu22/">Chenliang Xu</a>, 
+                        in <a href="https://www.cs.rochester.edu/">Computer Science</a> department at <a href="https://rochester.edu/">University of Rochester</a>.
+                        
+                        My research interests are <span class="highlight">Multi-modal Learning</span> and <span class="highlight">Computer Graphics</span>, including Multi-modal Large Language Models, Digital Human Rendering/Motion Synthesis, and Video Generation.</p>
+                        
+                        <p>Previously, I was an undergraduate student who received the highest honor distinction in research Bachelor of Science in Computer Science at the University of Rochester.</p>
+                        
+                        <div class="social-links">
+                            <span>Connect with me:</span>
+                            <a href="mailto:pliu23@u.rochester.edu"><img src="index/gmail_logo.png" alt="Email"></a>
+                            <a href="https://github.com/andypinxinliu" target="_blank"><img src="index/github_logo.png" alt="GitHub"></a>
+                            <a href="https://scholar.google.com/citations?user=ZJQldrQAAAAJ&hl=en" target="_blank"><img src="index/google_scholar_logo.png" alt="Google Scholar"></a>
+                        </div>
+                    </div>
                 </div>
-                <div class="slide fade">
-                    <img src="./index/avatar-3.png" alt="Andy Liu">
-                </div>
-                <div class="slide fade">
-                    <img src="./index/avatar-4.png" alt="Andy Liu">
-                </div>
-                <div class="slide fade">
-                    <img src="./index/avatar-5.png" alt="Andy Liu">
-                </div>
-                <div class="slide fade">
-                    <img src="./index/avatar-6.png" alt="Andy Liu">
-                </div>
-                <div class="slide fade">
-                    <img src="./index/avatar-7.png" alt="Andy Liu">
-                </div>
-                <div class="slide fade">
-                    <img src="./index/avatar-8.png" alt="Andy Liu">
+            </div>
+            
+            <!-- Research Interests Section -->
+            <div>
+                <span class="category">RESEARCH INTERESTS</span>
+                <hr class="line">
+                <div class="research-interests">
+                    <div class="research-card">
+                        <div class="research-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <div class="research-title">Multi-modal Learning</div>
+                        <p>Vision-language models and multi-modal understanding</p>
+                    </div>
+                    <div class="research-card">
+                        <div class="research-icon">
+                            <i class="fas fa-user-astronaut"></i>
+                        </div>
+                        <div class="research-title">Digital Humans</div>
+                        <p>Realistic avatar rendering and animation</p>
+                    </div>
+                    <div class="research-card">
+                        <div class="research-icon">
+                            <i class="fas fa-film"></i>
+                        </div>
+                        <div class="research-title">Video Generation</div>
+                        <p>Motion synthesis and video creation techniques</p>
+                    </div>
+                    <div class="research-card">
+                        <div class="research-icon">
+                            <i class="fas fa-comment-dots"></i>
+                        </div>
+                        <div class="research-title">Co-Speech Gesture</div>
+                        <p>Generating natural gestures from speech</p>
+                    </div>
                 </div>
             </div>
 
-            <!-- Right side - Bio content -->
-            <div class="bio-content">
-                <div class="bio_format">
-                    <p>Hi! 👋</p>
+            <!-- Academic Journey Section -->
+            <div>
+                <span class="category">ACADEMIC JOURNEY</span>
+                <hr class="line">
+                <div class="timeline">
+                    <div class="timeline-container right">
+                        <div class="timeline-content">
+                            <div class="timeline-year">May 2025 - August 2025</div>
+                            <p class="timeline-text">Research Scientist Intern, Meta Reality Lab</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-container">
+                        <div class="timeline-content">
+                            <div class="timeline-year">Jan 2025 - Present</div>
+                            <p class="timeline-text">PhD in Computer Science, University of Rochester</p>
+                        </div>
+                    </div>
                     
-                    <p>I am a PhD student, supervised by Dr. <a href="https://www.cs.rochester.edu/~cxu22/">Chenliang Xu</a>, 
-                    in <a href="https://www.cs.rochester.edu/">Computer Science</a> department at <a href="https://rochester.edu/">University of Rochester</a>.
+                    <div class="timeline-container">
+                        <div class="timeline-content">
+                            <div class="timeline-year">May 2024 - Dec 2024</div>
+                            <p class="timeline-text">Research Scientist Intern, FlawlessAI</p>
+                        </div>
+                    </div>
+                    <div class="timeline-container right">
+                        <div class="timeline-content">
+                            <div class="timeline-year">July 2020 - May 2024</div>
+                            <p class="timeline-text">BS in Computer Science with Highest Honor, University of Rochester</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- News Section -->
+            <div>
+                <span class="category">NEWS</span>
+                <hr class="line">
+                <div class="news-container">
+                    <ul class="item_content">
+                        <li>
+                            <span><span class="news-item-date">[03/2025]</span> I will join <b>Meta Reality Lab</b> as a <b>Research Scientist Intern</b>.</span>
+                        </li>
+                        <li>
+                            <span><span class="news-item-date">[11/2024]</span> One first author paper accepted <b>3DV 2025</b>.</span>
+                        </li>
+                        <li>
+                            <span><span class="news-item-date">[09/2024]</span> One co-author paper accepted <b>Siggraph Asia 2024</b>.</span>
+                        </li>
+                        <li>
+                            <span><span class="news-item-date">[07/2024]</span> One first author paper accepted <b>ECCV 2024</b>.</span>
+                        </li>
+                        <li>
+                            <span><span class="news-item-date">[06/2024]</span> Joined <b>FlawlessAI</b> as a <b>Research Scientist Intern</b>.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Selected Publications Section -->
+            <div>
+                <span class="category">SELECTED PUBLICATIONS</span>
+                <hr class="line">
+                <ol class="papers-list">
+                    <li class="item_format">
+                        <img src="./research/contextural-gesture-teaser.png" class="img_format" alt="Contextual Gesture">
+                        <div class="title_format">
+                            <b>Contextual Gesture: Co-Speech Gesture Video Generation through Context-aware Gesture Representation</b>
+                            <span class="author_format"><b style="color: var(--primary-color); display: inline;">Pinxin Liu</b>, Pengfei Zhang, Hyeongwoo Kim, Pablo Garrido, Ari Sharpio and Kyle Olszewski.</span>
+                            <span class="venue_format"><em style="color: var(--primary-dark)">Arxiv 2025</em></span>
+                            <div class="link_format">
+                                [<a href="https://arxiv.org/abs/2502.07239">Paper</a>]
+                                [<a href="https://andypinxinliu.github.io/Contextual-Gesture/">Project</a>]
+                                [<a href="https://andypinxinliu.github.io/Contextual-Gesture/">Code</a>]
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="item_format">
+                        <img src="./research/ai4anime-teaser.webp" class="img_format" alt="Ai4Anime">
+                        <div class="title_format">
+                            <b>Generative AI for Cel-Animation: A Survey</b>
+                            <span class="author_format">Yunlong Tang, Junjia Guo, <b style="color: var(--primary-color); display: inline;">Pinxin Liu</b>, Zhiyuan Wang, Hang Hua, Jia-Xing Zhong, Yunzhong Xiao, Chao Huang, Luchuan Song, Susan Liang and 7 more authors.</span>
+                            <span class="venue_format"><em style="color: var(--primary-dark)">Arxiv 2025</em></span>
+                            <div class="link_format">
+                                [<a href="https://arxiv.org/pdf/2501.06250">Paper</a>]
+                                [<a href="https://github.com/yunlong10/Awesome-AI4Animation">Project</a>]
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="item_format">
+                        <img src="./research/vidllm-survey-teaser.webp" class="img_format" alt="Ai4Anime">
+                        <div class="title_format">
+                            <b>Video Understanding with Large Language Models: A Survey</b>
+                            <span class="author_format">Yunlong Tang*, Jing Bi*, Siting Xu*, Luchuan Song, Susan Liang, Teng Wang, ...,<b style="color: var(--primary-color); display: inline;">Pinxin Liu</b>, Mingqian Feng, Feng Zheng, Jianguo Zhang, Ping Luo, Jiebo Luo, and Chenliang Xu.</span>
+                            <span class="venue_format"><em style="color: var(--primary-dark)">Arxiv 2025</em></span>
+                            <div class="link_format">
+                                [<a href="https://arxiv.org/pdf/2312.17432">Paper</a>]
+                                [<a href="https://github.com/yunlong10/Awesome-LLMs-for-Video-Understanding">Project</a>]
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="item_format">
+                        <img src="./research/gesturelsm-teaser.jpg" class="img_format" alt="GestureLSM">
+                        <div class="title_format">
+                            <b>GestureLSM: Latent Shortcut based Co-Speech Gesture Generation with Spatial-Temporal Modeling</b>
+                            <span class="author_format"><b style="color: var(--primary-color); display: inline;">Pinxin Liu</b>, Luchuan Song, Junhua Huang, Haiyang Liu and Chenliang Xu.</span>
+                            <span class="venue_format"><em style="color: var(--primary-dark)">Arxiv 2025</em></span>
+                            <div class="link_format">
+                                [<a href="https://arxiv.org/abs/2501.18898">Paper</a>]
+                                [<a href="https://andypinxinliu.github.io/GestureLSM/">Project</a>]
+                                [<a href="https://github.com/andypinxinliu/GestureLSM">Code</a>]
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="item_format">
+                        <img src="./research/kinmo_teaser.png" class="img_format" alt="KinMo">
+                        <div class="title_format">
+                            <b>KinMo: Kinematic-aware Human Motion Understanding and Generation</b>
+                            <span class="author_format"><b style="color: var(--primary-color); display: inline;">Pinxin Liu*</b>, Pengfei Zhang*, Hyeongwoo Kim, Pablo Garrido and Bindita Chaudhuri.</span>
+                            <span class="venue_format"><em style="color: var(--primary-dark)">Arxiv 2025</em></span>
+                            <div class="link_format">
+                                [<a href="https://arxiv.org/abs/2411.15472v1">Paper</a>]
+                                [<a href="https://andypinxinliu.github.io/KinMo/">Project</a>]
+                                [<a href="https://andypinxinliu.github.io/KinMo/">Code</a>]
+                            </div>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+
+            <!-- Teaching Section -->
+            <div>
+                <span class="category">TEACHING</span>
+                <hr class="line">
+                <div class="teaching-section">
+                    <ul class="item_content">
+                        <li>
+                            <span class="course-name">2024 Spring CSC 2/449: Machine Vision</span>
+                            <div class="instructor">Instructor: Dr. Chengliang Xu</div>
+                        </li>
+                        <li>
+                            <span class="course-name">2023 FALL CSC 446: Machine Learning</span>
+                            <div class="instructor">Instructor: Dr. Daniel Gildea</div>
+                        </li>
+                        <li>
+                            <span class="course-name">2023 SPRING CSC 2/447: Nature Language Processing</span>
+                            <div class="instructor">Instructor: Dr. Hangfeng He</div>
+                        </li>
+                        <li>
+                            <span class="course-name">2022 Fall CSC 2/448: Statistical Speech and Language Processing</span>
+                            <div class="instructor">Instructor: Dr. Daniel Gildea</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Reviewing Section -->
+            <div>
+                <span class="category">REVIEWING</span>
+                <hr class="line">
+                <div class="reviewing-section">
+                    <p style="padding: 15px;">CVPR 2024, 2025, EMNLP 2023, KDD 2024, AAAI 2024, ICLR 2025, 3DV 2025</p>
+                </div>
+            </div>
+
+            <!-- Skills Section -->
+            <div>
+                <span class="category">SKILLS</span>
+                <hr class="line">
+                <div class="skills-container">
+                    <div class="skills-category">
+                        <div class="skills-category-title">Programming Languages</div>
+                        <div class="skills-group">
+                            <div class="skill-tag">Python</div>
+                            <div class="skill-tag">C++</div>
+                            <div class="skill-tag">Java</div>
+                        </div>
+                    </div>
                     
-                    My research interests are <span class="highlight">Multi-modal Learning</span> and <span class="highlight">Computer Graphics</span>, including Multi-modal Large Language Models, Digital Human Rendering/Motion Synthesis, and Video Generation.</p>
+                    <div class="skills-category">
+                        <div class="skills-category-title">Machine Learning</div>
+                        <div class="skills-group">
+                            <div class="skill-tag">PyTorch</div>
+                            <div class="skill-tag">TensorFlow</div>
+                            <div class="skill-tag">Deep Learning</div>
+                            <div class="skill-tag">NLP</div>
+                        </div>
+                    </div>
                     
-                    <p>Previously, I was an undergraduate student who received the highest honor distinction in research Bachelor of Science in Computer Science at the University of Rochester.</p>
+                    <div class="skills-category">
+                        <div class="skills-category-title">Computer Vision</div>
+                        <div class="skills-group">
+                            <div class="skill-tag">Computer Vision</div>
+                            <div class="skill-tag">3D Graphics</div>
+                        </div>
+                    </div>
                     
-                    <div class="social-links">
-                        <span>Connect with me:</span>
-                        <a href="mailto:pliu23@u.rochester.edu"><img src="index/gmail_logo.png" alt="Email"></a>
-                        <a href="https://github.com/andypinxinliu" target="_blank"><img src="index/github_logo.png" alt="GitHub"></a>
-                        <a href="https://scholar.google.com/citations?user=ZJQldrQAAAAJ&hl=en" target="_blank"><img src="index/google_scholar_logo.png" alt="Google Scholar"></a>
+                    <div class="skills-category">
+                        <div class="skills-category-title">Tools & Technologies</div>
+                        <div class="skills-group">
+                            <div class="skill-tag">CUDA</div>
+                            <div class="skill-tag">Linux</div>
+                            <div class="skill-tag">Git</div>
+                            <div class="skill-tag">LaTeX</div>
+                        </div>
+                    </div>
+                    
+                    <div class="skills-category">
+                        <div class="skills-category-title">Soft Skills</div>
+                        <div class="skills-group">
+                            <div class="skill-tag">Research Methods</div>
+                            <div class="skill-tag">Technical Writing</div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        
-        <!-- Research Interests Section -->
-        <div>
-            <span class="category">RESEARCH INTERESTS</span>
-            <hr class="line">
-            <div class="research-interests">
-                <div class="research-card">
-                    <div class="research-icon">
-                        <i class="fas fa-brain"></i>
-                    </div>
-                    <div class="research-title">Multi-modal Learning</div>
-                    <p>Vision-language models and multi-modal understanding</p>
-                </div>
-                <div class="research-card">
-                    <div class="research-icon">
-                        <i class="fas fa-user-astronaut"></i>
-                    </div>
-                    <div class="research-title">Digital Humans</div>
-                    <p>Realistic avatar rendering and animation</p>
-                </div>
-                <div class="research-card">
-                    <div class="research-icon">
-                        <i class="fas fa-film"></i>
-                    </div>
-                    <div class="research-title">Video Generation</div>
-                    <p>Motion synthesis and video creation techniques</p>
-                </div>
-                <div class="research-card">
-                    <div class="research-icon">
-                        <i class="fas fa-comment-dots"></i>
-                    </div>
-                    <div class="research-title">Co-Speech Gesture</div>
-                    <p>Generating natural gestures from speech</p>
-                </div>
-            </div>
-        </div>
-        
-        <!-- Timeline Section -->
-        <div>
-            <span class="category">ACADEMIC JOURNEY</span>
-            <hr class="line">
-            <div class="timeline">
-
-                <div class="timeline-container right">
-                    <div class="timeline-content">
-                        <div class="timeline-year">May 2025 - August 2025</div>
-                        <p class="timeline-text">Research Scientist Intern, Meta Reality Lab</p>
-                    </div>
-                </div>
-
-                <div class="timeline-container">
-                    <div class="timeline-content">
-                        <div class="timeline-year"> Jan 2025 - Present</div>
-                        <p class="timeline-text">PhD in Computer Science, University of Rochester</p>
-                    </div>
-                </div>
-                
-                <div class="timeline-container">
-                    <div class="timeline-content">
-                        <div class="timeline-year">May 2024 - Dec 2024</div>
-                        <p class="timeline-text">Research Scientist Intern, FlawlessAI</p>
-                    </div>
-                </div>
-                <div class="timeline-container right">
-                    <div class="timeline-content">
-                        <div class="timeline-year">July 2020 - May 2024</div>
-                        <p class="timeline-text">BS in Computer Science with Highest Honor, University of Rochester</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        
-        
-        <div>
-            <span class="category">NEWS</span>
-            <hr class="line">
-            <div class="news-container">
-                <ul class="item_content">
-                    <li>
-                        <span><span class="news-item-date">[03/2025]</span> I will join <b>Meta Reality Lab</b> as a <b>Research Scientist Intern</b>.</span>
-                    </li>
-                    <li>
-                        <span><span class="news-item-date">[11/2024]</span> One first author paper accepted <b>3DV 2025</b>.</span>
-                    </li>
-                    <li>
-                        <span><span class="news-item-date">[09/2024]</span> One co-author paper accepted <b>Siggraph Asia 2024</b>.</span>
-                    </li>
-                    <li>
-                        <span><span class="news-item-date">[07/2024]</span> One first author paper accepted <b>ECCV 2024</b>.</span>
-                    </li>
-                    <li>
-                        <span><span class="news-item-date">[06/2024]</span> Joined <b>FlawlessAI</b> as a <b>Research Scientist Intern</b>.</span>
-                    </li>
-                    <li>
-                        <span><span class="news-item-date">[05/2024]</span> I received a BS degree in Computer Science with the <b>Highest Honor Distinction</b> in Research.</span>
-                    </li>
-                    <li>
-                        <span><span class="news-item-date">[05/2024]</span> One co-authored paper accepted to <b>Interspeech 2024</b>.</span>
-                    </li>
-                    <li>
-                        <span><span class="news-item-date">[05/2024]</span> One first-authored paper accepted to <b>ACL 2024</b>.</span>
-                    </li>
-                    <li>
-                        <span><span class="news-item-date">[04/2024]</span> I was honored as the National Student Employee of the Year for 2024, selected from a highly competitive pool of six candidates across the country.</span>
-                    </li>
-                    <li>
-                        <span><span class="news-item-date">[12/2023]</span> One first-authored paper accepted to <b>ICASSP 2024</b>.</span>
-                    </li>
-                    <li>
-                        <span><span class="news-item-date">[01/2023]</span> One co-authored paper accepted to <b>AAAI 2021 Workshop</b>.</span>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        
-        <div>
-            <span class="category">PAPERS</span>
-            <hr class="line">
-            <ol class="papers-list">
-                <li class="item_format">
-                    <img src="./research/contextural-gesture-teaser.png" class="img_format" alt="Contextual Gesture">
-                    <div class="title_format">
-                        <b>Contextual Gesture: Co-Speech Gesture Video Generation through Context-aware Gesture Representation</b>
-                        <span class="author_format"><b style="color: var(--primary-color); display: inline;">Pinxin Liu</b>, Pengfei Zhang, Hyeongwoo Kim, Pablo Garrido, Ari Sharpio and Kyle Olszewski.</span>
-                        <span class="venue_format"><em style="color: var(--primary-dark)">Arxiv 2025</em></span>
-                        <div class="link_format">
-                            [<a href="https://arxiv.org/abs/2502.07239">Paper</a>]
-                            [<a href="https://andypinxinliu.github.io/Contextual-Gesture/">Project</a>]
-                            [<a href="https://andypinxinliu.github.io/Contextual-Gesture/">Code</a>]
-                        </div>
-                    </div>
-                </li>
-
-                <li class="item_format">
-                    <img src="./research/ai4anime-teaser.webp" class="img_format" alt="Ai4Anime">
-                    <div class="title_format">
-                        <b>Generative AI for Cel-Animation: A Survey</b>
-                        <span class="author_format">Yunlong Tang, Junjia Guo, <b style="color: var(--primary-color); display: inline;">Pinxin Liu</b>, Zhiyuan Wang, Hang Hua, Jia-Xing Zhong, Yunzhong Xiao, Chao Huang, Luchuan Song, Susan Liang and 7 more authors.</span>
-                        <span class="venue_format"><em style="color: var(--primary-dark)">Arxiv 2025</em></span>
-                        <div class="link_format">
-                            [<a href="https://arxiv.org/pdf/2501.06250">Paper</a>]
-                            [<a href="https://github.com/yunlong10/Awesome-AI4Animation">Project</a>]
-                        </div>
-                    </div>
-                </li>
-
-
-                <li class="item_format">
-                    <img src="./research/vidllm-survey-teaser.webp" class="img_format" alt="Ai4Anime">
-                    <div class="title_format">
-                        <b>Video Understanding with Large Language Models: A Survey</b>
-                        <span class="author_format">Yunlong Tang*, Jing Bi*, Siting Xu*, Luchuan Song, Susan Liang, Teng Wang, ...,<b style="color: var(--primary-color); display: inline;">Pinxin Liu</b>, Mingqian Feng, Feng Zheng, Jianguo Zhang, Ping Luo, Jiebo Luo, and Chenliang Xu.</span>
-                        <span class="venue_format"><em style="color: var(--primary-dark)">Arxiv 2025</em></span>
-                        <div class="link_format">
-                            [<a href="https://arxiv.org/pdf/2312.17432">Paper</a>]
-                            [<a href="https://github.com/yunlong10/Awesome-LLMs-for-Video-Understanding">Project</a>]
-                        </div>
-                    </div>
-                </li>
-
-                <li class="item_format">
-                    <img src="./research/gesturelsm-teaser.jpg" class="img_format" alt="GestureLSM">
-                    <div class="title_format">
-                        <b>GestureLSM: Latent Shortcut based Co-Speech Gesture Generation with Spatial-Temporal Modeling</b>
-                        <span class="author_format"><b style="color: var(--primary-color); display: inline;">Pinxin Liu</b>, Luchuan Song, Junhua Huang, Haiyang Liu and Chenliang Xu.</span>
-                        <span class="venue_format"><em style="color: var(--primary-dark)">Arxiv 2025</em></span>
-                        <div class="link_format">
-                            [<a href="https://arxiv.org/abs/2501.18898">Paper</a>]
-                            [<a href="https://andypinxinliu.github.io/GestureLSM/">Project</a>]
-                            [<a href="https://github.com/andypinxinliu/GestureLSM">Code</a>]
-                        </div>
-                    </div>
-                </li>
-
-                <li class="item_format">
-                    <img src="./research/kinmo_teaser.png" class="img_format" alt="KinMo">
-                    <div class="title_format">
-                        <b>KinMo: Kinematic-aware Human Motion Understanding and Generation</b>
-                        <span class="author_format"><b style="color: var(--primary-color); display: inline;">Pinxin Liu*</b>, Pengfei Zhang*, Hyeongwoo Kim, Pablo Garrido and Bindita Chaudhuri.</span>
-                        <span class="venue_format"><em style="color: var(--primary-dark)">Arxiv 2025</em></span>
-                        <div class="link_format">
-                            [<a href="https://arxiv.org/abs/2411.15472v1">Paper</a>]
-                            [<a href="https://andypinxinliu.github.io/KinMo/">Project</a>]
-                            [<a href="https://andypinxinliu.github.io/KinMo/">Code</a>]
-                        </div>
-                    </div>
-                </li>
-
-                <li class="item_format">
-                    <img src="./research/3dv-teaser.jpg" class="img_format" alt="GaussianStyle">
-                    <div class="title_format">
-                        <b>GaussianStyle: Gaussian Head Avatar via StyleGAN</b>
-                        <span class="author_format"><b style="color: var(--primary-color); display: inline;">Pinxin Liu</b>, Luchuan Song, Daoan Zhang, Hang Hua, Yunlong Tang, Huaijin Tu, Jiebo Luo and Chenliang Xu.</span>
-                        <span class="venue_format"><em style="color: var(--primary-dark)">3DV 2025</em></span>
-                        <div class="link_format">
-                            [<a href="https://arxiv.org/abs/2402.00827">Paper</a>]
-                            [<a href="https://andypinxinliu.github.io/GaussianStyle/">Project</a>]
-                            [<a href="https://github.com/andypinxinliu/HumanFaceProject/tree/main/assets/GaussianStyle">Code</a>]
-                        </div>
-                    </div>
-                </li>
-
-                <li class="item_format">
-                    <img src="./research/TextToon-teaser.jpg" class="img_format" alt="TextToon">
-                    <div class="title_format">
-                        <b>Texttoon: Real-time text toonify head avatar from single video</b>
-                        <span class="author_format">Luchuan Song, Lele Chen, Celong Liu, <b style="color: var(--primary-color); display: inline;">Pinxin Liu</b>, and Chenliang Xu.</span>
-                        <span class="venue_format"><em style="color: var(--primary-dark)">Siggraph Asia 2024</em></span>
-                        <div class="link_format">
-                            [<a href="https://arxiv.org/abs/2401.09386">Paper</a>]
-                            [<a href="https://github.com/Songluchuan/Tri2plane">Project</a>]
-                            [<a href="https://github.com/Songluchuan/Tri2plane">Code</a>]
-                            [<a href="https://github.com/Songluchuan/Tri2plane">Demo</a>]
-                        </div>
-                    </div>
-                </li>
-
-                <li class="item_format">
-                    <img src="./research/tri-plane_teaser.jpeg" class="img_format" alt="Tri^2-plane">
-                    <div class="title_format">
-                        <b>Tri^{2}-plane: Thinking Head Avatar via Feature Pyramid</b>
-                        <span class="author_format">Luchuan Song, <b style="color: var(--primary-color); display: inline;">Pinxin Liu</b>, Lele Chen, Celong Liu and Chenliang Xu.</span>
-                        <span class="venue_format"><em style="color: var(--primary-dark)">ECCV 2024</em></span>
-                        <div class="link_format">
-                            [<a href="https://arxiv.org/abs/2401.09386">Paper</a>]
-                            [<a href="https://github.com/Songluchuan/Tri2plane">Project</a>]
-                            [<a href="https://github.com/Songluchuan/Tri2plane">Code</a>]
-                            [<a href="https://github.com/Songluchuan/Tri2plane">Demo</a>]
-                        </div>
-                    </div>
-                </li>
-
-                <li class="item_format">
-                    <img src="./research/debate-teaser.jpg" class="img_format" alt="Tri^2-plane">
-                    <div class="title_format">
-                        <b>An Empirical Analysis on Large Language Models in Debate Evaluation</b>
-                        <span class="author_format">Xinyi Liu, <b style="color: var(--primary-color); display: inline;">Pinxin Liu</b>, and Hangfeng He.</span>
-                        <span class="venue_format"><em style="color: var(--primary-dark)">ACL 2024</em></span>
-                        <div class="link_format">
-                            [<a href="https://arxiv.org/pdf/2406.00050">Paper</a>]
-                            [<a href="https://github.com/XinyiLiu0227/LLM_Debate_Bias">Code</a>]
-                        </div>
-                    </div>
-                </li>
-
-                <li class="item_format">
-                    <img src="./research/gtr-teaser.jpg" class="img_format" alt="Tri^2-plane">
-                    <div class="title_format">
-                        <b>Articulatory Phonetics Informed Controllable Expressive Speech Synthesis</b>
-                        <span class="author_format">Zehua Kcriss Li, Meiying Melissa Chen, Yi Zhong, <b style="color: var(--primary-color); display: inline;">Pinxin Liu</b>, and Zhiyao Duan.</span>
-                        <span class="venue_format"><em style="color: var(--primary-dark)">Interspeech 2024</em></span>
-                        <div class="link_format">
-                            [<a href="https://arxiv.org/abs/2406.10514">Paper</a>]
-                            [<a href="https://demo.gtr-voice.com/">Demo</a>]
-                            [<a href="https://github.com/ZehuaKcrissLi/GTR-Voice">Code</a>]
-                        </div>
-                    </div>
-                </li>
-
-                <li class="item_format">
-                    <img src="./research/pipeline_icassp.png" class="img_format" alt="Adaptive Super Resolution">
-                    <div class="title_format">
-                        <b>Adaptive Super Resolution For One-Shot Talking-Head Generation</b>
-                        <span class="author_format">Luchuan Song, <b style="color: var(--primary-color); display: inline;">Pinxin Liu</b>, Guojun Yin, Chenliang Xu.</span>
-                        <span class="venue_format"><em style="color: var(--primary-dark)">ICASSP 2024</em></span>
-                        <div class="link_format">
-                            [<a href="https://github.com/Songluchuan/AdaSR-TalkingHead/">Paper</a>]
-                            [<a href="https://github.com/Songluchuan/AdaSR-TalkingHead/">Project</a>]
-                            [<a href="https://github.com/Songluchuan/AdaSR-TalkingHead/">Code</a>]
-                        </div>
-                    </div>
-                </li>
-
-                <li class="item_format">
-                    <img src="./research/commonsense.png" class="img_format" alt="Commonsense Reasoning">
-                    <div class="title_format">
-                        <b>Contextualized Multi-Step Commonsense Reasoning through Context Extension</b>
-                        <span class="author_format">Hecong Wang, Erqian Xu, <b style="color: var(--primary-color); display: inline;">Pinxin Liu</b>, Zijian Meng, Zhen Bai.</span>
-                        <span class="venue_format"><em style="color: var(--primary-dark)">AAAI Workshop 2023</em></span>
-                        <div class="link_format">
-                            [<a href="https://r2hcai.github.io/AAAI-23/files/CameraReadys/47.pdf">Paper</a>]
-                        </div>
-                    </div>
-                </li>
-            </ol>
-        </div>
-        
-        <div>
-            <span class="category">TEACHING</span>
-            <hr class="line">
-            <div class="teaching-section">
-                <ul class="item_content">
-                    <li>
-                        <span class="course-name">2024 Spring CSC 2/449: Machine Vision</span>
-                        <div class="instructor">Instructor: Dr. Chengliang Xu</div>
-                    </li>
-                    <li>
-                        <span class="course-name">2023 FALL CSC 446: Machine Learning</span>
-                        <div class="instructor">Instructor: Dr. Daniel Gildea</div>
-                    </li>
-                    <li>
-                        <span class="course-name">2023 SPRING CSC 2/447: Nature Language Processing</span>
-                        <div class="instructor">Instructor: Dr. Hangfeng He</div>
-                    </li>
-                    <li>
-                        <span class="course-name">2022 Fall CSC 2/448: Statistical Speech and Language Processing</span>
-                        <div class="instructor">Instructor: Dr. Daniel Gildea</div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-
-        <div>
-            <span class="category">REVIEWING</span>
-            <hr class="line">
-            <div class="reviewing-section">
-                <p style="padding: 15px;">CVPR 2024, 2025, EMNLP 2023, KDD 2024, AAAI 2024, ICLR 2025, 3DV 2025</p>
-            </div>
-        </div>
-
-        <!-- Skills Section -->
-        <div>
-            <span class="category">SKILLS</span>
-            <hr class="line">
-            <div class="skills-container">
-                <div class="skills-category">
-                    <div class="skills-category-title">Programming Languages</div>
-                    <div class="skills-group">
-                        <div class="skill-tag">Python</div>
-                        <div class="skill-tag">C++</div>
-                        <div class="skill-tag">Java</div>
-                    </div>
-                </div>
-                
-                <div class="skills-category">
-                    <div class="skills-category-title">Machine Learning</div>
-                    <div class="skills-group">
-                        <div class="skill-tag">PyTorch</div>
-                        <div class="skill-tag">TensorFlow</div>
-                        <div class="skill-tag">Deep Learning</div>
-                        <div class="skill-tag">NLP</div>
-                    </div>
-                </div>
-                
-                <div class="skills-category">
-                    <div class="skills-category-title">Computer Vision</div>
-                    <div class="skills-group">
-                        <div class="skill-tag">Computer Vision</div>
-                        <div class="skill-tag">3D Graphics</div>
-                    </div>
-                </div>
-                
-                <div class="skills-category">
-                    <div class="skills-category-title">Tools & Technologies</div>
-                    <div class="skills-group">
-                        <div class="skill-tag">CUDA</div>
-                        <div class="skill-tag">Linux</div>
-                        <div class="skill-tag">Git</div>
-                        <div class="skill-tag">LaTeX</div>
-                    </div>
-                </div>
-                
-                <div class="skills-category">
-                    <div class="skills-category-title">Soft Skills</div>
-                    <div class="skills-group">
-                        <div class="skill-tag">Research Methods</div>
-                        <div class="skill-tag">Technical Writing</div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        </section>
 
         <div class="footer">
             <a href="https://clustrmaps.com/site/1byfb" title="Visit tracker">
@@ -485,6 +384,8 @@
         </div>
     </div>
     
+    <script src="theme.js"></script>
     <script src="slideshow.js" defer></script>
+    <script src="back-to-top.js"></script>
 </body>
 </html>
