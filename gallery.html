@@ -14,18 +14,21 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" HREF="index/favicon.ico">
-    <title>Pinxin Liu - Gallery</title>
+    <title>Photo Gallery - Pinxin Liu</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;600&family=Dawning+of+a+New+Day&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     
     <link rel="preload" href="main.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="main.css"></noscript>
 </head>
 
 <body>
-    <!-- Loading Animation -->
+    <!-- Loader -->
     <div class="loader">
-        <div class="loader-circle"></div>
+        <div class="loader-content">
+            <div class="spinner"></div>
+            <p>Loading...</p>
+        </div>
     </div>
     
     <!-- Navigation Menu -->
@@ -53,68 +56,129 @@
     <div id="main">
         <!-- Gallery Section -->
         <section id="gallery" class="section active">
-            <span class="category">GALLERY</span>
-            <hr class="line">
-            <div class="gallery-grid">
-                <div class="gallery-item">
-                    <img src="./research/contextural-gesture-teaser.png" alt="Contextual Gesture">
-                    <div class="gallery-caption">
-                        <h3>Contextual Gesture</h3>
-                        <p>Co-Speech Gesture Video Generation</p>
+            <h1 class="section-title">PHOTO ALBUMS</h1>
+            <div class="albums-grid">
+                <!-- Beach Album -->
+                <div class="album-item" data-album="beach">
+                    <div class="album-cover">
+                        <img src="gallery/beach/1.png" alt="Beach Memories">
+                        <div class="album-overlay">
+                            <h3>Beach Memories</h3>
+                            <p>Sitting there, watching the sunset.</p>
+                        </div>
                     </div>
                 </div>
 
-                <div class="gallery-item">
-                    <img src="./research/gesturelsm-teaser.jpg" alt="GestureLSM">
-                    <div class="gallery-caption">
-                        <h3>GestureLSM</h3>
-                        <p>Latent Shortcut based Co-Speech Gesture Generation</p>
+                <!-- City Album -->
+                <div class="album-item" data-album="city">
+                    <div class="album-cover">
+                        <img src="gallery/city/1.png" alt="City Life">
+                        <div class="album-overlay">
+                            <h3>City Girl</h3>
+                            <p>A quiet sunset between tall buildings</p>
+                        </div>
                     </div>
                 </div>
 
-                <div class="gallery-item">
-                    <img src="./research/kinmo_teaser.png" alt="KinMo">
-                    <div class="gallery-caption">
-                        <h3>KinMo</h3>
-                        <p>Kinematic-aware Human Motion Understanding</p>
+                <!-- Evening Album -->
+                <div class="album-item" data-album="evening">
+                    <div class="album-cover">
+                        <img src="gallery/evening/1.png" alt="Evening Scenes">
+                        <div class="album-overlay">
+                            <h3>Evening Scenes</h3>
+                            <p>The evening breeze is gentle</p>
+                        </div>
                     </div>
                 </div>
 
-                <div class="gallery-item">
-                    <img src="./research/3dv-teaser.jpg" alt="GaussianStyle">
-                    <div class="gallery-caption">
-                        <h3>GaussianStyle</h3>
-                        <p>Gaussian Head Avatar via StyleGAN</p>
+                <!-- Hello Album -->
+                <div class="album-item" data-album="hello">
+                    <div class="album-cover">
+                        <img src="gallery/hello/1.png" alt="Hello Moments">
+                        <div class="album-overlay">
+                            <h3>Hello Moments</h3>
+                            <p>The first word of the day, soft and simple</p>
+                        </div>
                     </div>
                 </div>
 
-                <div class="gallery-item">
-                    <img src="./research/tri-plane_teaser.jpeg" alt="Tri^2-plane">
-                    <div class="gallery-caption">
-                        <h3>Tri^2-plane</h3>
-                        <p>Thinking Head Avatar via Feature Pyramid</p>
+                <!-- Music Album -->
+                <div class="album-item" data-album="music">
+                    <div class="album-cover">
+                        <img src="gallery/music/1.png" alt="Music">
+                        <div class="album-overlay">
+                            <h3>Music</h3>
+                            <p>The world is loud, but I have music</p>
+                        </div>
                     </div>
                 </div>
 
-                <div class="gallery-item">
-                    <img src="./research/pipeline_icassp.png" alt="AdaSR">
-                    <div class="gallery-caption">
-                        <h3>AdaSR</h3>
-                        <p>Adaptive Super Resolution For One-Shot Talking-Head Generation</p>
+                <!-- Nature Album -->
+                <div class="album-item" data-album="nature">
+                    <div class="album-cover">
+                        <img src="gallery/nature/1.png" alt="Nature">
+                        <div class="album-overlay">
+                            <h3>Nature</h3>
+                            <p>Maybe what we call nature… is just a softer version of ourselves</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Room Album -->
+                <div class="album-item" data-album="room">
+                    <div class="album-cover">
+                        <img src="gallery/room/1.png" alt="Room">
+                        <div class="album-overlay">
+                            <h3>Home</h3>
+                            <p>Life doesn't have to be full</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Travel Album -->
+                <div class="album-item" data-album="travel">
+                    <div class="album-cover">
+                        <img src="gallery/travel/1.png" alt="Travel">
+                        <div class="album-overlay">
+                            <h3>Travel</h3>
+                            <p>Adventures around the world</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Winter Album -->
+                <div class="album-item" data-album="winter">
+                    <div class="album-cover">
+                        <img src="gallery/winter/1.png" alt="Winter">
+                        <div class="album-overlay">
+                            <h3>Winter</h3>
+                            <p>The wind turns cold, but the heart slowly begins to warm</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
+    </div>
 
-        <div class="footer">
-            <a href="https://clustrmaps.com/site/1byfb" title="Visit tracker">
-                <img src="//www.clustrmaps.com/map_v2.png?d=Ag-DLUyxYprkvEFDlsL7QoXf2fUFQ41ogt-7CsEBSto&cl=ffffff" alt="Visitor Map" />
-            </a>
-            <p style="margin-top: 15px; font-size: 14px; color: var(--text-light);">© 2025 Andy (Pinxin) Liu - Last Updated: April 2025</p>
+    <!-- Album Modal -->
+    <div id="albumModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2 id="modalTitle"></h2>
+            <div id="modalPhotos" class="modal-photos"></div>
+            <!-- Album description will be added here dynamically -->
         </div>
+    </div>
+
+    <div class="footer">
+        <a href="https://clustrmaps.com/site/1byfb" title="Visit tracker">
+            <img src="//www.clustrmaps.com/map_v2.png?d=Ag-DLUyxYprkvEFDlsL7QoXf2fUFQ41ogt-7CsEBSto&cl=ffffff" alt="Visitor Map" />
+        </a>
+        <p style="margin-top: 15px; font-size: 14px; color: var(--text-light);">© 2025 Andy (Pinxin) Liu - Last Updated: April 2025</p>
     </div>
     
     <script src="theme.js"></script>
     <script src="back-to-top.js"></script>
+    <script src="gallery.js"></script>
 </body>
 </html> 
