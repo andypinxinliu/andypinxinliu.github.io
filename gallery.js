@@ -18,10 +18,10 @@ document.addEventListener('DOMContentLoaded', function() {
             longDescriptionCN: '📍海边日记｜落日、裙摆，还有关于你的小心思\n\n「我总以为海是辽阔的，直到遇见你，才知道原来心动也可以像潮水一样，一点点淹没自己。」\n\n傍晚的海风温柔得不像话，裙摆轻轻扬起，我在落日余晖里回头，你恰好按下快门。光影藏在发梢，像你没说出口的温柔。\n\n我们什么都没做，只是在沙滩上随便走走，说说最近的烦恼，笑着互相打趣。可我却偷偷记下了你说"这片晚霞真美"的语气。\n\n🦋脚边的浪一遍遍拍打上来，像是在提醒我，把今天也好好收藏起来。你不说我也知道，以后再回忆起这个夏天，一定是和你并排坐在沙滩上的这一刻。',
             hasTranslation: true,
             photos: Array.from({length: 23}, (_, i) => ({
-                src: `gallery/beach/${i + 1}.png`,
+                src: `gallery/beach/${i + 1}.webp`,
                 caption: 'Beach Memory'
             })).concat([
-                { src: 'gallery/beach/24.jpeg', caption: 'Beach Memory' }
+                { src: 'gallery/beach/24.webp', caption: 'Beach Memory' }
             ])
         },
         city: {
@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
             longDescriptionCN: '城市那么大，我一个人也能走得很慢。」\n\n日暮时分我坐在天台，风吹乱头发，也吹散了今天的心事。有人在楼下奔忙，有人刚下班回家，而我只是想静静地待一会儿，看看天空有没有把晚霞调成我喜欢的颜色。\n\n🌃 有时候觉得自己就像城市的一颗小灯泡，亮着，但不会被注意。\n所以我把耳机戴好，把音量调低一点，听自己心跳的声音。\n一边跑步，一边数着脚步声，仿佛这样，就不会被孤独追上。\n\n🐈 偶尔抱抱楼下的猫，像是在安慰自己也在被温柔需要着。\n这个城市不会停下来等你，但落日会，它每天都等你抬头看一眼。',
             hasTranslation: true,
             photos: Array.from({length: 8}, (_, i) => ({
-                src: `gallery/city/${i + 1}.png`,
+                src: `gallery/city/${i + 1}.webp`,
                 caption: 'City Scene'
             }))
         },
@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function() {
             longDescriptionCN: '📍Evening Note｜夜晚的风是温柔的，它不会问你白天过得怎样\n\n「有些话不需要说出口，星星会替你听。」\n\n夜晚降临得总是刚刚好，不早不晚，像是知道你今天有一点累、又不想太早睡。于是它把星星点在天上，把风调成你喜欢的温度。\n\n🌠 我坐在窗边，双手托着下巴，看着远方没有尽头的夜。\n没有特别想谁，也没有特别想说的话，只是觉得这样静静地陪着星空发呆，好像也挺浪漫的。\n\n🌌 越长大越喜欢夜晚。它不吵不闹，不热情也不冷淡。\n就像一位懂分寸的老朋友，陪你躲进自己的小小宇宙，让你安心做个慢吞吞的自己。\n\n📝 今天也没什么大事发生。\n只是在天黑之后，偷偷又喜欢上这个世界一点点。',
             hasTranslation: true,
             photos: Array.from({length: 14}, (_, i) => ({
-                src: `gallery/evening/${i + 1}.png`,
+                src: `gallery/evening/${i + 1}.webp`,
                 caption: 'Evening Scene'
             }))
         },
@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', function() {
             longDescriptionCN: '"你好呀，今天也很努力吧？"\n\n镜头靠近的时候，好像你就在我对面。不是在舞台上，也不是在朋友圈，是生活里最普通的时刻——系好领结、轻轻挥手、偷偷红了脸。\n\n👒我喜欢这样的打招呼方式，不用说太多，也不用解释太久。一个眼神、一句"hi"，就像是告诉你："我有在等你注意我。"\n\n📖有人说，温柔的开场白，决定了一天的情绪。那我就用一张笑脸，替你存下今天的好心情吧。\n\n🫧也许我们还不熟，也许只是擦肩而过，但我想，如果有机会说第一句话，那我会说："你好，今天的你真好看。"',
             hasTranslation: true,
             photos: Array.from({length: 10}, (_, i) => ({
-                src: `gallery/hello/${i + 1}.png`,
+                src: `gallery/hello/${i + 1}.webp`,
                 caption: 'Hello Moment'
             }))
         },
@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', function() {
             longDescriptionCN: '「当语言失效的时候，音符就开始说话了。」\n\n我一直觉得，音乐不是拿来表演的，而是拿来陪伴的。\n\n🎻 在海边拉琴的时候，风会来和我合奏；\n❄️ 在雪夜吹笛的时候，连雪花都轻轻落下，像是在听我诉说。\n🖤 坐在钢琴前的时光，总是最安静的片刻，好像一切都慢下来，只剩下自己和旋律。\n\n音乐是生活的缝隙，它不惊艳，不张扬，但在你想逃离现实的瞬间，会悄悄为你留一个出口。\n\n🎵 不需要懂乐理，也不需要弹得多好，只要你在弹奏，生活就不会太沉默。',
             hasTranslation: true,
             photos: Array.from({length: 4}, (_, i) => ({
-                src: `gallery/music/${i + 1}.png`,
+                src: `gallery/music/${i + 1}.webp`,
                 caption: 'Music Moment'
             }))
         },
@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', function() {
             longDescriptionCN: '「想靠近自然，其实就是想靠近一个更温柔的自己。」\n\n🐶 和狗狗在花田里奔跑时，阳光洒在眼睛上，我也突然笑得像小孩。\n🌿 和植物一起发呆、和果实一起呼吸，才发现生活并不复杂，大自然早就替我们写好了答案。\n\n🧚‍♀️ 有时候我也想变成一只森林精灵，坐在水边捧着小小的光，什么也不想，什么也不说。\n\n🌸 春天在靠近，我用一朵樱花许了个愿，希望未来的每一个"今天"，都能被轻轻喜欢着。\n\n自然很安静，但也很有力量。它不问你要什么，只会慢慢陪着你一点点好起来。',
             hasTranslation: true,
             photos: Array.from({length: 11}, (_, i) => ({
-                src: `gallery/nature/${i + 1}.png`,
+                src: `gallery/nature/${i + 1}.webp`,
                 caption: 'Nature Scene'
             }))
         },
@@ -86,7 +86,7 @@ document.addEventListener('DOMContentLoaded', function() {
             longDescriptionCN: '「日子不喧哗，也不慌张，在窗边晒着太阳，就是一种刚刚好的幸福。」\n\n☕️ 清晨的阳光透过窗帘，我抱着猫咪发了会儿呆。它没有问我今天要做什么，只是默默地陪着。\n\n📖 下午在书堆里找了一本旧小说，读了三页，就被暖黄的光晕困住了。偶尔一抬头，觉得自己住进了绘本里。\n\n🌊 风吹起窗帘，我靠在阳台边发呆，脑海里放着最喜欢的音乐，世界很静，心里却满得刚刚好。\n\n🎇 夜晚最适合小小期待。也许是一本读到一半的书，也许是窗外的烟花，也许是一个再普通不过的"下次见"。',
             hasTranslation: true,
             photos: Array.from({length: 10}, (_, i) => ({
-                src: `gallery/room/${i + 1}.png`,
+                src: `gallery/room/${i + 1}.webp`,
                 caption: 'Room Scene'
             }))
         },
@@ -97,7 +97,7 @@ document.addEventListener('DOMContentLoaded', function() {
             longDescriptionCN: '📍目的地不重要，和你一起才是旅行的意义\n\n「你说海边的风会把烦恼吹走，那我就陪你一起追风。」\n\n裙摆被风吹起的那一刻，我以为自己成了小说里的女主角，阳光温柔，空气甜得像是恋爱的前奏。\n\n你在前面回头看我，嘴角带着笑，我忽然有点不争气地心动了。那一刻我想，这趟旅行，不如叫"奔赴你"更合适一点。\n\n🌾那片金黄的麦田，我们躺着聊从前，聊以后。你说你记得第一次遇见我时，我穿的也是白色上衣和黑裙子。风吹过的声音像是在起誓，一切都刚刚好，像是命运安排的浪漫剧本。\n\n🪷傍晚换上浴衣，我们在神社门口投了硬币许愿。你问我许了什么，我笑着说："说出来就不灵了。"其实我偷偷许的是——"希望这段旅程一直延续，哪怕换了地点，也别换了你。"',
             hasTranslation: true,
             photos: Array.from({length: 15}, (_, i) => ({
-                src: `gallery/travel/${i + 1}.png`,
+                src: `gallery/travel/${i + 1}.webp`,
                 caption: 'Travel Memory'
             }))
         },
@@ -108,7 +108,7 @@ document.addEventListener('DOMContentLoaded', function() {
             longDescriptionCN: '「风在变冷，心却慢慢热起来。」\n\n🚉 火车站的风格外安静，我裹紧围巾，把手藏进大衣口袋里，等一辆不知道驶向哪里的列车，像在等一个还没来的人。\n\n☃️ 雪地里和朋友做了一个小雪人，它什么也不会说，但总是笑着。\n我想，也许温柔的陪伴，就该是这样——不问、不说，只在身边。\n\n🌨️ 冬天其实是很适合想念的季节。风吹进回忆，雪落进心事。\n你不出现也没关系，我会替你好好看着雪、数着星星，继续往前走。',
             hasTranslation: true,
             photos: Array.from({length: 10}, (_, i) => ({
-                src: `gallery/winter/${i + 1}.png`,
+                src: `gallery/winter/${i + 1}.webp`,
                 caption: 'Winter Scene'
             }))
         }
